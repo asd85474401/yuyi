@@ -8,11 +8,11 @@
         <version>2.5.6</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.kcidea</groupId>
-    <artifactId>erms</artifactId>
+    <groupId>top.lcywings</groupId>
+    <artifactId>pony</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>erms</name>
-    <description>ERSM本地版本</description>
+    <name>pony</name>
+    <description>pony本地版本</description>
     <properties>
         <java.version>1.8</java.version>
         <!-- 阿里巴巴FastJson -->

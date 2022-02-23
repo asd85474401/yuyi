@@ -1,5 +1,5 @@
 my-config:
-  port: 9999
+  port: 9989
   temp-path: E:/erms/temp/
   key-dir: E:/ers/key/
   web-url: http://192.168.1.182:8083/#/dataProvider?apiKey=
