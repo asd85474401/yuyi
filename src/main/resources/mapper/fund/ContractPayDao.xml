@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kcidea.erms.dao.fund.ContractPayDao">
+    <delete id="deleteBySidContractId">
+        DELETE FROM contract_pay
+        WHERE s_id = #{sid} AND contract_id = #{contractId}
+    </delete>
+
+    <select id="findSumBySidBudgetIdContractIdPayFlag" resultType="java.math.BigDecimal">
+        SELECT IFNULL(SUM(price),0)
+        FROM contract_pay
+        WHERE s_id = #{sid} AND contract_id = #{contractId}
+          AND budget_id = #{budgetId} AND pay_flag = #{payFlag}
+    </select>
+    <select id="findPage" resultType="com.kcidea.erms.model.fund.ContractPayListModel">
+        SELECT cp.id, cp.pay_day, cp.price, cp.invoice_number, sb.name budgetName
+        FROM contract_pay cp
+        LEFT JOIN school_budget sb on cp.budget_id = sb.id AND cp.s_id = sb.s_id
+        WHERE cp.s_id = #{sid} AND cp.contract_id = #{contractId}
+        <if test="invoiceNumber != null and invoiceNumber != '' ">
+            and cp.invoice_number LIKE concat(#{invoice_number}, '%')
+        </if>
+    </select>
+    <select id="findCountBySidBudgetId" resultType="java.lang.Integer">
+        select count(id) from contract_pay where s_id = #{sid} and budget_id = #{budgetId}
+    </select>
+    <select id="findListBySidBudgetIdContractId" resultType="com.kcidea.erms.domain.fund.ContractPay">
+        SELECT id, s_id, contract_id, budget_id, budget_year, pay_flag, pay_day, price, invoice_number
+        FROM contract_pay
+        WHERE s_id = #{sid} AND contract_Id = #{contractId} AND budget_id = #{budgetId}
+    </select>
+    <select id="findSumBySidBudgetIdvYearPayFlag" resultType="java.math.BigDecimal">
+        SELECT IFNULL(SUM(price),0)
+        FROM contract_pay
+        WHERE s_id = #{sid}
+        AND budget_id = #{budgetId}
+        AND budget_year = #{vYear}
+        <if test="payFlag != null">
+            AND pay_flag = #{payFlag}
+        </if>
+    </select>
+    <select id="findSumBySidYearPayFlag" resultType="com.kcidea.erms.model.common.IdValueModel">
+        SELECT budget_id as id,IFNULL(SUM(price),0) as value
+        FROM contract_pay
+        WHERE s_id = #{sid} AND budget_year = #{vYear} AND pay_flag = #{payFlag}
+        group by budget_id
+    </select>
+</mapper>

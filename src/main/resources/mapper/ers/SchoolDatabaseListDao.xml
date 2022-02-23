@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kcidea.erms.dao.ers.SchoolDatabaseListDao">
+    <select id="findOneBySidYearDid" resultType="com.kcidea.erms.domain.ers.SchoolDatabaseList">
+        SELECT * FROM school_database_list
+        WHERE s_id = #{sid}
+          AND d_id = #{did}
+          AND vyear = #{vYear}
+    </select>
+    <select id="findOrderDidSetBySidYear" resultType="java.lang.Long">
+        select distinct d_id
+        from school_database_list
+        where s_id = #{sid}
+        <if test="vYear != null">
+            and vyear = #{vYear}
+        </if>
+        and order_type != 0 and order_type != 5
+    </select>
+    <select id="findYearListBySidDid" resultType="java.lang.Integer">
+        select vyear
+        from school_database_list
+        where s_id = #{sid} and d_id = #{did} and order_type != 0
+    </select>
+    <select id="findSonDidListBySidDid" resultType="java.lang.Long">
+        select DISTINCT d_id from school_database_list
+        where s_id = #{sid} and total_d_id = #{did} and total_flag = 0
+    </select>
+    <delete id="deleteBySidYearDid">
+        delete from
+        school_database_list
+        where s_id = #{sid} and d_id = #{did} and vyear = #{vYear}
+    </delete>
+</mapper>

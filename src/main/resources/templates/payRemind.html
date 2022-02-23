@@ -1,0 +1,70 @@
+<!--邮件模板-->
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>邮件模板</title>
+</head>
+<style  type="text/css">
+    .body-wrap{
+       margin: 10px;
+		box-shadow: 0 0 0.02469rem rgba(207, 207, 207, 0.5);
+		border-radius: 5px;
+		width: 500px;
+		padding: 30px 70px;
+		font-family: BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, 'Pingfang SC', "Hiragino Sans GB", 'Microsoft Yahei', 'WenQuanYi Micro Hei', sans-serif;
+		border: 1px solid #ddd;
+		border-top: 5px solid #206DE6;
+	 }
+    .title{
+        font-size: 18px;
+        color: #333;
+		margin:20px 0;
+    }
+    .content{
+        font-size: 16px;
+        color: #333;
+        line-height: 23px;
+        margin: 18px 0;
+    }
+    .footer{
+        font-size: 16px;
+        color: #333;
+		margin:20px 0 5px 0;
+    }
+    .remark{
+        font-size: 14px;
+        color: #bbb;
+		margin:5px 0 20px 0;
+    }
+	.link-wrap{
+		color:#206DE6
+	}
+</style>
+<body>
+    <div class="body-wrap">
+
+        <div class="content-wrap">
+			<div class="title">尊敬的用户，您好！</div>
+
+            <div class="content">
+                ERMS系统检测到您所在学校的【
+                <!--/*@thymesVar id="contractName" type=""*/-->
+                <span th:text="${contractName}"></span>】
+                合同付款截止日期为：
+                <!--/*@thymesVar id="endDay" type=""*/-->
+                <span th:text="${endDay}"></span>
+                ，还有
+                <!--/*@thymesVar id="days" type=""*/-->
+                <span th:text="${days}"></span>
+                天即将逾期，请尽快完成支付，避免逾期！
+            </div>
+
+            <div class="content">具体内容请登录进行查看。</div>
+        </div>
+        <div class="footer">
+            <span></span><a href="http://test.erms.addup.com.cn/" target="_blank" class="link-wrap">ERMS文献资源质量信息管理平台</a>
+        </div>
+
+    </div>
+</body>
+</html>

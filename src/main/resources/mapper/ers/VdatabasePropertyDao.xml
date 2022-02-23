@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kcidea.erms.dao.ers.VdatabasePropertyDao">
+
+    <select id="findListBySid" resultType="com.kcidea.erms.model.common.IdNameModel">
+        select id,name from vdatabase_property where s_id is null or s_id = 0
+        <if test="sid != null and sid != 0">
+            or s_id = #{sid}
+        </if>
+    </select>
+</mapper>

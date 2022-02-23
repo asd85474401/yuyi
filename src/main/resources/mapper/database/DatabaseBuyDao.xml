@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kcidea.erms.dao.database.DatabaseBuyDao">
+
+    <select id="findListBySidDidYearNatureBuyType" resultType="com.kcidea.erms.model.database.buyplan.DatabaseBuyListModel">
+        SELECT db.id,db.d_id,db.vyear,db.price,db.state,
+        dbi.buy_type,dbi.nature_type,dbi.resource_type
+        FROM database_buy db
+        LEFT JOIN database_buy_info dbi on db.s_id = dbi.s_id and db.d_id = dbi.d_id
+        WHERE db.s_id = #{sid}
+        <if test="did != null and did != 999">
+            and db.d_id = #{did}
+        </if>
+        and db.vyear = #{vYear}
+        <if test="natureType != null and natureType != 999">
+            and dbi.nature_type = #{natureType}
+        </if>
+        <if test="buyType != null and buyType != 999">
+            and dbi.buy_type = #{buyType}
+        </if>
+    </select>
+    <select id="findDidSetBySidYear" resultType="java.lang.Long">
+        select distinct d_id
+        from database_buy
+        where s_id = #{sid} and vyear = #{vYear}
+    </select>
+</mapper>

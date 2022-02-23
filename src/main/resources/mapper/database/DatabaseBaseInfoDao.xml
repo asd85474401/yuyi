@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kcidea.erms.dao.database.DatabaseBaseInfoDao">
+    <select id="findOneBySidDid" resultType="com.kcidea.erms.domain.database.DatabaseBaseInfo">
+        select *
+        from database_base_info
+        where s_id = #{sid} and d_id = #{did}
+  </select>
+
+    <select id="findAreaListBySid" resultType="java.lang.String">
+        select distinct area from database_base_info
+        where s_id = #{sid} and area is not null
+    </select>
+
+    <select id="findNatureTypeListBySid" resultType="java.lang.String">
+        select distinct nature_type from database_base_info
+        where s_id = #{sid} and nature_type is not null
+    </select>
+
+    <select id="findListBySidAreaNatureTypeFulltextFlag" resultType="java.lang.Long">
+        select d_id
+        from database_base_info
+        where s_id = #{sid}
+        <if test="area != null and area != '全部'">
+            and area = #{area}
+        </if>
+        <if test="natureType != null and natureType != '全部'">
+            and nature_type = #{natureType}
+        </if>
+        <if test="fulltextFlag != null and fulltextFlag != 999">
+            and fulltext_flag = #{fulltextFlag}
+        </if>
+    </select>
+    <select id="findCountBySidDid" resultType="java.lang.Integer">
+        select count(d_id)
+        from database_base_info
+        where s_id = #{sid} and d_id = #{did}
+    </select>
+
+</mapper>

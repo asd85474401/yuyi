@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <springProperty scope="context" name="infoLogPath" source="my-config.log-path.info"/>
+    <springProperty scope="context" name="errorLogPath" source="my-config.log-path.error"/>
+
+    <!-- 这里设置控制台输出的格式 -->
+    <appender name="consoleLog" class="ch.qos.logback.core.ConsoleAppender">
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <pattern>
+                %d - %msg%n
+            </pattern>
+        </layout>
+    </appender>
+
+    <!-- 这里设置输出INFO日志 -->
+    <appender name="infoLog" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>INFO</level>   <!-- 匹配的级别 -->
+            <onMatch>ACCPET</onMatch>   <!-- 匹配 拒绝-->
+            <onMismatch>DENY</onMismatch>   <!--不匹配 接受 -->
+        </filter>
+        <encoder>
+            <pattern>
+                %msg%n
+            </pattern>
+        </encoder>
+        <!--滚动策略-->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- 文件存放位置 -->
+            <FileNamePattern>
+                ${infoLogPath}
+            </FileNamePattern>
+        </rollingPolicy>
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <Pattern>
+                %d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n
+            </Pattern>
+        </layout>
+    </appender>
+
+    <!-- 这里设置输出ERROR日志 -->
+    <appender name="errorLog" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>ERROR</level>
+        </filter>
+        <encoder>
+            <pattern>
+                %msg%n
+            </pattern>
+        </encoder>
+        <!--滚动策略-->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- 文件存放位置 -->
+            <FileNamePattern>
+                ${errorLogPath}
+            </FileNamePattern>
+        </rollingPolicy>
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <Pattern>
+                %d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n
+            </Pattern>
+        </layout>
+    </appender>
+
+    <!-- 这里应用输出的格式，设置输出的级别为info -->
+    <root level="info">
+        <appender-ref ref="consoleLog"/>
+        <appender-ref ref="infoLog"/>
+        <appender-ref ref="errorLog"/>
+    </root>
+
+</configuration>

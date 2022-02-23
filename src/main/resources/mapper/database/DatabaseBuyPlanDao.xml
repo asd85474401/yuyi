@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kcidea.erms.dao.database.DatabaseBuyPlanDao">
+    <select id="findListByYearTitleStateSidCheckFlagPage"
+            resultType="com.kcidea.erms.model.database.buyplan.DatabaseBuyListModel">
+        select id,title,state,remark
+        from database_buy_plan
+        where s_id = #{sid} and vyear = #{vYear}
+        <if test="title != null and title != ''">
+            and title like concat('%',#{title},'%')
+        </if>
+        <if test="state != null and state != 999">
+            and state = #{state}
+        </if>
+        <if test="checkFlag">
+            and state != 0
+            order by FIELD(`state`,1,2,3,0),updated_time desc
+        </if>
+        <if test="!checkFlag">
+            order by FIELD(`state`,0,3,1,2),updated_time desc
+        </if>
+    </select>
+    <select id="findCountBySidTitleYearPlanId" resultType="java.lang.Integer">
+        select count(id)
+        from database_buy_plan
+        where s_id = #{sid}
+        and vyear = #{vYear}
+        and title = #{title}
+        <if test="planId != null">
+            and id != #{planId}
+        </if>
+    </select>
+    <select id="findOneBySidPlanId" resultType="com.kcidea.erms.domain.database.DatabaseBuyPlan">
+        select *
+        from database_buy_plan
+        where s_id = #{sid} and id = #{planId}
+    </select>
+    <select id="findStateBySidPlanId" resultType="java.lang.Integer">
+        select state
+        from database_buy_plan
+        where s_id = #{sid} and id = #{planId}
+    </select>
+    <delete id="deleteBySidPlanId">
+        delete from database_buy_plan
+        where s_id = #{sid} and id = #{planId}
+    </delete>
+</mapper>

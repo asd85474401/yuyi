@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kcidea.erms.dao.ers.SubjectDao">
+
+    <select id="findListByCategoryTypeTreeLevel" resultType="com.kcidea.erms.model.common.DropDownModel">
+        select id, name, tree_level, parent_id as parentId
+        from subject
+        where category_type = #{categoryType}
+          and tree_level &lt;= #{treeLevel}
+    </select>
+
+    <select id="findSubjectIdNameBySubjectId" resultType="com.kcidea.erms.model.common.IdNameModel">
+        select id,name from subject
+        where id = (select parent_id from subject where id = #{subjectId})
+    </select>
+
+    <select id="findIdSetBySubjectCategory" resultType="java.lang.Long">
+        select distinct id
+        from subject
+        where subject_category = #{subjectCategory}
+    </select>
+
+    <select id="findListByCategoryType" resultType="com.kcidea.erms.domain.ers.Subject">
+        select id, name, tree_level, subject_category
+        from subject
+        where category_type = #{categoryType}
+    </select>
+</mapper>

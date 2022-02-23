@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kcidea.erms.dao.task.ErmsTaskDao">
+
+    <select id="findListBySidNameTypeStatePage" resultType="com.kcidea.erms.model.task.TaskModel">
+        select *
+        from erms_task
+        where s_id = #{sid}
+        <if test="taskName != null and taskName != ''">
+            and task_name like concat('%',#{taskName},'%')
+        </if>
+        <if test="taskType != null and taskType != 999">
+            and task_type = #{taskType}
+        </if>
+        <if test="taskState != null and taskState != 999">
+            and task_state = #{taskState}
+        </if>
+        order by created_time desc
+    </select>
+    <select id="findUnfinishedTask" resultType="java.lang.Integer">
+        select count(*)
+        from admin_task
+        where task_type = #{taskType}
+          and (state = 0 or state = 1)
+    </select>
+</mapper>

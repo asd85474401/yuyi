@@ -1,0 +1,110 @@
+my-config:
+  port: 9999
+  temp-path: E:/erms/temp/
+  key-dir: E:/ers/key/
+  web-url: http://192.168.1.182:8083/#/dataProvider?apiKey=
+  file-url: http://192.168.1.188:9000/minio/erms/
+  log-path:
+    info: D:/log/erms-local/%d{yyyy-MM}/info.%d{yyyy-MM-dd}.log
+    error: D:/log/erms-local/%d{yyyy-MM}/error.%d{yyyy-MM-dd}.log
+  minio:
+    endpoint: http://192.168.1.188:9000
+    access-key: minioadmin
+    secret-key: minioadmin
+    base-bucket: erms
+  datasource:
+    master:
+      username: root
+      password: kcidea1509@
+      url: jdbc:mysql://192.168.1.188/erms?characterEncoding=UTF-8&useUnicode=true&rewriteBatchedStatements=true&useSSL=false&serverTimezone=Asia/Shanghai
+    slave_ers:
+      username: root
+      password: kcidea1509@
+      url: jdbc:mysql://192.168.1.188/erstest?characterEncoding=UTF-8&useUnicode=true&rewriteBatchedStatements=true&useSSL=false&serverTimezone=Asia/Shanghai
+
+
+#服务的配置
+server:
+  #端口设置
+  port: ${my-config.port}
+  servlet:
+    context-path: /erms
+    session:
+      timeout: 3600
+
+#spring 配置
+spring:
+  application:
+    name: erms
+  servlet:
+    multipart:
+      # 设置单个上传文件的大小限制
+      max-file-size: 200MB
+      # 在多文件上传模式下，组合文件的总的大小限制
+      max-request-size: 200MB
+  web:
+    resources:
+      static-locations: classpath:/WEB-INF/resources/
+
+  #邮件
+  mail:
+    host: smtp.exmail.qq.com
+    username: ers@kcidea.com
+    password: LRtSsNYofbAUAo2T
+    properties:
+      mail:
+        smtp:
+          port: 587
+          starttls:
+            enable: true
+            required: true
+          ssl: true
+
+  #redis
+  redis:
+    database: 1
+    host: 192.168.1.188
+    password: kcidea1509@
+    port: 6379
+    timeout: 60000
+
+  #数据源
+  datasource:
+    dynamic:
+      primary: master
+      strict: false
+      datasource:
+        master:  #主数据库
+          username: ${my-config.datasource.master.username}
+          password: ${my-config.datasource.master.password}
+          url: ${my-config.datasource.master.url}
+          driver-class-name: com.mysql.cj.jdbc.Driver
+        slave_ers:  #ers数据库
+          username: ${my-config.datasource.slave_ers.username}
+          password: ${my-config.datasource.slave_ers.password}
+          url: ${my-config.datasource.slave_ers.url}
+          driver-class-name: com.mysql.cj.jdbc.Driver
+      hikari: # hikari 配置
+        connection-timeout: 30000 #数据库连接超时时间,默认30秒，即30000
+        min-idle: 5 #最小空闲连接数量
+        max-pool-size: 20 #连接池最大连接数，默认是10
+        max-lifetime: 1800000 #此属性控制池中连接的最长生命周期，值0表示无限生命周期，默认1800000即30分钟
+        idle-timeout: 180000
+
+#mybatis
+mybatis-plus:
+  mapper-locations: classpath:/mapper/**/*.xml
+  #实体扫描，多个package用逗号或者分号分隔
+  typeAliasesPackage: com.kcidea.erms.domain
+  global-config:
+    db-config:
+      id-type: ASSIGN_ID
+      table-underline: true
+      #字段策略
+      insert-strategy: NOT_NULL
+      update-strategy: NOT_NULL
+      select-strategy: NOT_NULL
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: true
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #开启sql打印

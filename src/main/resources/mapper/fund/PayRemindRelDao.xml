@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kcidea.erms.dao.fund.PayRemindRelDao">
+    <delete id="deleteBySid">
+        DELETE FROM pay_remind_rel WHERE s_id = #{sid}
+    </delete>
+
+    <select id="findUserIdSetBySidDisableFlag" resultType="java.lang.Long">
+        SELECT user_id FROM pay_remind_rel
+        WHERE s_id = #{sid} AND disable_flag = #{disableFlag}
+    </select>
+    <select id="findOneByUserIdSid" resultType="com.kcidea.erms.domain.fund.PayRemindRel">
+        SELECT * FROM pay_remind_rel
+        WHERE s_id = #{sid} AND user_id = #{userId}
+    </select>
+    <select id="findCountByUserIdSid" resultType="java.lang.Integer">
+        SELECT count(id) FROM pay_remind_rel
+        WHERE s_id = #{sid} AND user_id = #{userId}
+    </select>
+</mapper>

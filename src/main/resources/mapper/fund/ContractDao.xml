@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kcidea.erms.dao.fund.ContractDao">
+
+    <select id="findPage" resultType="com.kcidea.erms.model.fund.ContractInfoModel">
+        SELECT c.id,c.name,c.number,c.order_type,c.rmb_price,c.pay_start_day,
+               c.pay_end_day,c.budget_id,c.pay_state, sb.name budgetName
+        FROM contract c
+        LEFT JOIN contract_database cd ON c.s_id = cd.s_id AND cd.contract_id = c.id
+        LEFT JOIN contract_pay cp ON c.s_id = cp.s_id AND c.id = cp.contract_id
+        LEFT JOIN school_budget sb ON c.s_id = sb.s_id AND c.budget_id = sb.id
+        WHERE c.s_id = #{sid}
+        <if test="name != null and name != '' ">
+            AND c.name LIKE concat(#{name}, '%')
+        </if>
+        <if test="number != null and number != '' ">
+            AND c.number LIKE concat(#{number}, '%')
+        </if>
+        <if test="did != null and did != 999">
+            AND cd.d_id = #{did}
+        </if>
+        <if test="payStartDay != null and payStartDay != '' ">
+            AND TO_DAYS(c.pay_start_day) &gt;= To_DAYS(#{payStartDay})
+        </if>
+        <if test="payEndDay != null and payEndDay != '' ">
+            AND TO_DAYS(c.pay_end_day) &lt;= To_DAYS(#{payEndDay})
+        </if>
+        <if test="budgetId != null and budgetId != 999">
+            AND c.budget_id = #{budgetId}
+        </if>
+        <if test="vYear != null and vYear != 999">
+            AND cp.budget_year = #{vYear}
+        </if>
+        <if test="orderType != null and orderType != 999">
+            AND c.order_type = #{orderType}
+        </if>
+        <if test="payStateList != null and payStateList.size() > 0">
+            AND c.pay_state IN
+            <foreach collection="payStateList" item="payState" index="index" open="(" close=")" separator=",">
+                #{payState}
+            </foreach>
+        </if>
+        GROUP BY c.id
+    </select>
+    <select id="findUnPaidList" resultType="com.kcidea.erms.domain.fund.Contract">
+        SELECT id, s_id, name, pay_state, pay_start_day, pay_end_day
+        FROM contract
+        WHERE pay_state = 0 or pay_state = 1
+    </select>
+</mapper>

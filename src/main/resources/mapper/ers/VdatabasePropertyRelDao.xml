@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kcidea.erms.dao.ers.VdatabasePropertyRelDao">
+    <delete id="deleteBySidDid">
+        delete from vdatabase_property_rel
+        where s_id = #{sid} and d_id = #{did}
+    </delete>
+
+    <select id="findListBySidDid" resultType="com.kcidea.erms.model.database.DatabasePropertyInfoModel">
+        select vpr.d_id did,vpr.s_id sid,vpr.language_id,vpr.property_id,vpr.paper_flag,vp.name propertyName
+        from vdatabase_property_rel vpr
+        left join vdatabase_property vp on vpr.property_id = vp.id
+        where d_id = #{did}
+        <if test="sid != null and sid != 0">
+            and (vpr.s_id = #{sid} or vpr.s_id is null)
+        </if>
+        <if test="sid == null or sid == 0">
+            and vpr.s_id is null
+        </if>
+    </select>
+
+    <select id="findDidSetBySid" resultType="java.lang.Long">
+        select distinct d_id
+        from vdatabase_property_rel
+        where
+        s_id = #{sid}
+    </select>
+    
+    <select id="findListBySid" resultType="com.kcidea.erms.domain.ers.VdatabasePropertyRel">
+        select d_id, language_id, property_id, s_id
+        from vdatabase_property_rel
+        where s_id = #{sid} or s_id is null
+    </select>
+</mapper>

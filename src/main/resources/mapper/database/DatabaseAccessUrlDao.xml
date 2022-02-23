@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kcidea.erms.dao.database.DatabaseAccessUrlDao">
+
+    <select id="findListBySidDid" resultType="com.kcidea.erms.model.company.AccessUrlInfoModel">
+        select id as accessId,access_type,login_type,url,access_tips,remark
+        from database_access_url
+        where s_id = #{sid}
+        and d_id = #{did}
+    </select>
+
+    <select id="findOneBySidDidAccessId" resultType="com.kcidea.erms.domain.database.DatabaseAccessUrl">
+        select *
+        from database_access_url
+        where s_id = #{sid}
+        and d_id = #{did}
+        and id = #{accessId}
+    </select>
+
+    <select id="findListBySid" resultType="com.kcidea.erms.domain.database.DatabaseAccessUrl">
+        select *
+        from database_access_url
+        where s_id = #{sid}
+    </select>
+
+    <delete id="deleteBySidDidAccessId">
+        delete from database_access_url
+        where s_id = #{sid}
+        and d_id = #{did}
+        and id = #{accessId}
+    </delete>
+
+</mapper>
