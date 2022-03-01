@@ -1,0 +1,315 @@
+2022-02-28 08:33:05 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2022-02-28 08:33:05 [restartedMain] INFO  top.lcywings.pony.PonyApplication - Starting PonyApplication using Java 1.8.0_251 on DESKTOP-MG71CNU with PID 13792 (G:\Lcywings\YuyiProject\Lcywings\target\classes started by kcidea-2020 in G:\Lcywings\YuyiProject\Lcywings)
+2022-02-28 08:33:05 [restartedMain] INFO  top.lcywings.pony.PonyApplication - The following profiles are active: dev
+2022-02-28 08:33:05 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-28 08:33:05 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-28 08:33:06 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-02-28 08:33:06 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-02-28 08:33:06 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2022-02-28 08:33:07 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9989 (http)
+2022-02-28 08:33:07 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9989"]
+2022-02-28 08:33:07 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-02-28 08:33:07 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-02-28 08:33:07 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/pony] - Initializing Spring embedded WebApplicationContext
+2022-02-28 08:33:07 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1784 ms
+2022-02-28 08:33:07 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2022-02-28 08:33:07 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-02-28 08:34:25 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2022-02-28 08:34:25 [restartedMain] INFO  top.lcywings.pony.PonyApplication - Starting PonyApplication using Java 1.8.0_251 on DESKTOP-MG71CNU with PID 17512 (G:\Lcywings\YuyiProject\Lcywings\target\classes started by kcidea-2020 in G:\Lcywings\YuyiProject\Lcywings)
+2022-02-28 08:34:25 [restartedMain] INFO  top.lcywings.pony.PonyApplication - The following profiles are active: dev
+2022-02-28 08:34:25 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-28 08:34:25 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-28 08:34:26 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-02-28 08:34:26 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-02-28 08:34:26 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2022-02-28 08:34:26 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-28 08:34:26 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$526c4621] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-28 08:34:26 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-28 08:34:26 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-28 08:34:27 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9989 (http)
+2022-02-28 08:34:27 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9989"]
+2022-02-28 08:34:27 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-02-28 08:34:27 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-02-28 08:34:27 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/pony] - Initializing Spring embedded WebApplicationContext
+2022-02-28 08:34:27 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1446 ms
+2022-02-28 08:34:27 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2022-02-28 08:34:27 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-02-28 08:35:47 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2022-02-28 08:35:47 [restartedMain] INFO  top.lcywings.pony.PonyApplication - Starting PonyApplication using Java 1.8.0_251 on DESKTOP-MG71CNU with PID 20024 (G:\Lcywings\YuyiProject\Lcywings\target\classes started by kcidea-2020 in G:\Lcywings\YuyiProject\Lcywings)
+2022-02-28 08:35:47 [restartedMain] INFO  top.lcywings.pony.PonyApplication - The following profiles are active: dev
+2022-02-28 08:35:47 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-28 08:35:47 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-28 08:35:48 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-02-28 08:35:48 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-02-28 08:35:48 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2022-02-28 08:35:48 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-28 08:35:48 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$6cfff3b7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-28 08:35:48 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-28 08:35:48 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-28 08:35:48 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9989 (http)
+2022-02-28 08:35:48 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9989"]
+2022-02-28 08:35:48 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-02-28 08:35:48 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-02-28 08:35:48 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/pony] - Initializing Spring embedded WebApplicationContext
+2022-02-28 08:35:48 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1261 ms
+2022-02-28 08:35:49 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
+2022-02-28 08:35:54 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2022-02-28 08:35:54 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-02-28 08:43:34 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2022-02-28 08:43:34 [restartedMain] INFO  top.lcywings.pony.PonyApplication - Starting PonyApplication using Java 1.8.0_251 on DESKTOP-MG71CNU with PID 11220 (G:\Lcywings\YuyiProject\Lcywings\target\classes started by kcidea-2020 in G:\Lcywings\YuyiProject\Lcywings)
+2022-02-28 08:43:34 [restartedMain] INFO  top.lcywings.pony.PonyApplication - The following profiles are active: dev
+2022-02-28 08:43:34 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-28 08:43:34 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-28 08:43:34 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-02-28 08:43:34 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-02-28 08:43:34 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2022-02-28 08:43:35 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9989 (http)
+2022-02-28 08:43:35 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9989"]
+2022-02-28 08:43:35 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-02-28 08:43:35 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-02-28 08:43:35 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/pony] - Initializing Spring embedded WebApplicationContext
+2022-02-28 08:43:35 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1126 ms
+2022-02-28 08:43:35 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2022-02-28 08:43:35 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-02-28 08:44:15 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2022-02-28 08:44:15 [restartedMain] INFO  top.lcywings.pony.PonyApplication - Starting PonyApplication using Java 1.8.0_251 on DESKTOP-MG71CNU with PID 5396 (G:\Lcywings\YuyiProject\Lcywings\target\classes started by kcidea-2020 in G:\Lcywings\YuyiProject\Lcywings)
+2022-02-28 08:44:15 [restartedMain] INFO  top.lcywings.pony.PonyApplication - The following profiles are active: dev
+2022-02-28 08:44:15 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-28 08:44:15 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-28 08:44:16 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-02-28 08:44:16 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-02-28 08:44:16 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2022-02-28 08:44:16 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9989 (http)
+2022-02-28 08:44:16 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9989"]
+2022-02-28 08:44:16 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-02-28 08:44:16 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-02-28 08:44:16 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/pony] - Initializing Spring embedded WebApplicationContext
+2022-02-28 08:44:16 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1114 ms
+2022-02-28 08:44:17 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2022-02-28 08:44:17 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-02-28 08:50:48 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2022-02-28 08:50:48 [restartedMain] INFO  top.lcywings.pony.PonyApplication - Starting PonyApplication using Java 1.8.0_251 on DESKTOP-MG71CNU with PID 19672 (G:\Lcywings\YuyiProject\Lcywings\target\classes started by kcidea-2020 in G:\Lcywings\YuyiProject\Lcywings)
+2022-02-28 08:50:48 [restartedMain] INFO  top.lcywings.pony.PonyApplication - The following profiles are active: dev
+2022-02-28 08:50:48 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-28 08:50:48 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-28 08:50:48 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-02-28 08:50:48 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-02-28 08:50:48 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2022-02-28 08:50:49 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9989 (http)
+2022-02-28 08:50:49 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9989"]
+2022-02-28 08:50:49 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-02-28 08:50:49 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-02-28 08:50:49 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/pony] - Initializing Spring embedded WebApplicationContext
+2022-02-28 08:50:49 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1203 ms
+2022-02-28 08:50:49 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2022-02-28 08:50:49 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-02-28 08:55:24 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2022-02-28 08:55:24 [restartedMain] INFO  top.lcywings.pony.PonyApplication - Starting PonyApplication using Java 1.8.0_251 on DESKTOP-MG71CNU with PID 11836 (G:\Lcywings\YuyiProject\Lcywings\target\classes started by kcidea-2020 in G:\Lcywings\YuyiProject\Lcywings)
+2022-02-28 08:55:24 [restartedMain] INFO  top.lcywings.pony.PonyApplication - The following profiles are active: dev
+2022-02-28 08:55:24 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-28 08:55:24 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-28 08:55:25 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-02-28 08:55:25 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-02-28 08:55:25 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2022-02-28 08:55:25 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-28 08:55:25 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$b25d6d8f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-28 08:55:25 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-28 08:55:25 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-28 08:55:25 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9989 (http)
+2022-02-28 08:55:25 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9989"]
+2022-02-28 08:55:25 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-02-28 08:55:25 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-02-28 08:55:25 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/pony] - Initializing Spring embedded WebApplicationContext
+2022-02-28 08:55:25 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1239 ms
+2022-02-28 08:55:26 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
+2022-02-28 08:55:27 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2022-02-28 08:55:27 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-02-28 08:55:57 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2022-02-28 08:55:57 [restartedMain] INFO  top.lcywings.pony.PonyApplication - Starting PonyApplication using Java 1.8.0_251 on DESKTOP-MG71CNU with PID 8156 (G:\Lcywings\YuyiProject\Lcywings\target\classes started by kcidea-2020 in G:\Lcywings\YuyiProject\Lcywings)
+2022-02-28 08:55:57 [restartedMain] INFO  top.lcywings.pony.PonyApplication - The following profiles are active: dev
+2022-02-28 08:55:57 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-28 08:55:57 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-28 08:55:58 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-02-28 08:55:58 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-02-28 08:55:58 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2022-02-28 08:55:58 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-28 08:55:58 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$7fd2bcba] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-28 08:55:58 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-28 08:55:58 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-28 08:55:58 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9989 (http)
+2022-02-28 08:55:58 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9989"]
+2022-02-28 08:55:58 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-02-28 08:55:58 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-02-28 08:55:58 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/pony] - Initializing Spring embedded WebApplicationContext
+2022-02-28 08:55:58 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1122 ms
+2022-02-28 08:55:59 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
+2022-02-28 08:55:59 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
+2022-02-28 08:55:59 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - slave_ers - Starting...
+2022-02-28 08:55:59 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - slave_ers - Start completed.
+2022-02-28 08:55:59 [restartedMain] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource - load a datasource named [master] success
+2022-02-28 08:55:59 [restartedMain] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource - load a datasource named [slave_ers] success
+2022-02-28 08:55:59 [restartedMain] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource initial loaded [2] datasource,primary datasource named [master]
+2022-02-28 08:55:59 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-02-28 08:55:59 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9989"]
+2022-02-28 08:55:59 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9989 (http) with context path '/pony'
+2022-02-28 08:55:59 [restartedMain] INFO  top.lcywings.pony.PonyApplication - Started PonyApplication in 2.435 seconds (JVM running for 3.013)
+2022-02-28 08:56:50 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource start closing ....
+2022-02-28 08:56:50 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
+2022-02-28 08:56:50 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
+2022-02-28 08:56:50 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - slave_ers - Shutdown initiated...
+2022-02-28 08:56:50 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - slave_ers - Shutdown completed.
+2022-02-28 08:56:50 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
+2022-02-28 08:56:53 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2022-02-28 08:56:53 [restartedMain] INFO  top.lcywings.pony.PonyApplication - Starting PonyApplication using Java 1.8.0_251 on DESKTOP-MG71CNU with PID 8324 (G:\Lcywings\YuyiProject\Lcywings\target\classes started by kcidea-2020 in G:\Lcywings\YuyiProject\Lcywings)
+2022-02-28 08:56:53 [restartedMain] INFO  top.lcywings.pony.PonyApplication - The following profiles are active: dev
+2022-02-28 08:56:53 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-28 08:56:53 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-28 08:56:53 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-02-28 08:56:53 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-02-28 08:56:53 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2022-02-28 08:56:53 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-28 08:56:53 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration' of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$493b331e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-28 08:56:53 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dsProcessor' of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-28 08:56:53 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'dynamicDatasourceAnnotationAdvisor' of type [com.baomidou.dynamic.datasource.aop.DynamicDataSourceAnnotationAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-02-28 08:56:54 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9989 (http)
+2022-02-28 08:56:54 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9989"]
+2022-02-28 08:56:54 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-02-28 08:56:54 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-02-28 08:56:54 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/pony] - Initializing Spring embedded WebApplicationContext
+2022-02-28 08:56:54 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1135 ms
+2022-02-28 08:56:54 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2022-02-28 08:56:54 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-02-28 08:57:54 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2022-02-28 08:57:54 [restartedMain] INFO  top.lcywings.pony.PonyApplication - Starting PonyApplication using Java 1.8.0_251 on DESKTOP-MG71CNU with PID 21088 (G:\Lcywings\YuyiProject\Lcywings\target\classes started by kcidea-2020 in G:\Lcywings\YuyiProject\Lcywings)
+2022-02-28 08:57:54 [restartedMain] INFO  top.lcywings.pony.PonyApplication - The following profiles are active: dev
+2022-02-28 08:57:54 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-28 08:57:54 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-28 08:57:55 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-02-28 08:57:55 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-02-28 08:57:55 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2022-02-28 08:57:55 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9989 (http)
+2022-02-28 08:57:55 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9989"]
+2022-02-28 08:57:55 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-02-28 08:57:55 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-02-28 08:57:55 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/pony] - Initializing Spring embedded WebApplicationContext
+2022-02-28 08:57:55 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1071 ms
+2022-02-28 08:57:56 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2022-02-28 08:57:56 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-02-28 08:59:08 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2022-02-28 08:59:08 [restartedMain] INFO  top.lcywings.pony.PonyApplication - Starting PonyApplication using Java 1.8.0_251 on DESKTOP-MG71CNU with PID 6152 (G:\Lcywings\YuyiProject\Lcywings\target\classes started by kcidea-2020 in G:\Lcywings\YuyiProject\Lcywings)
+2022-02-28 08:59:08 [restartedMain] INFO  top.lcywings.pony.PonyApplication - The following profiles are active: dev
+2022-02-28 08:59:08 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-28 08:59:08 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-28 08:59:08 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-02-28 08:59:08 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-02-28 08:59:08 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2022-02-28 08:59:09 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9989 (http)
+2022-02-28 08:59:09 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9989"]
+2022-02-28 08:59:09 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-02-28 08:59:09 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-02-28 08:59:09 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/pony] - Initializing Spring embedded WebApplicationContext
+2022-02-28 08:59:09 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1129 ms
+2022-02-28 08:59:10 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-02-28 08:59:10 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9989"]
+2022-02-28 08:59:10 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9989 (http) with context path '/pony'
+2022-02-28 08:59:10 [restartedMain] INFO  top.lcywings.pony.PonyApplication - Started PonyApplication in 2.332 seconds (JVM running for 2.908)
+2022-02-28 09:01:14 [restartedMain] INFO  top.lcywings.pony.PonyApplication - Starting PonyApplication using Java 1.8.0_251 on DESKTOP-MG71CNU with PID 6152 (G:\Lcywings\YuyiProject\Lcywings\target\classes started by kcidea-2020 in G:\Lcywings\YuyiProject\Lcywings)
+2022-02-28 09:01:14 [restartedMain] INFO  top.lcywings.pony.PonyApplication - The following profiles are active: dev
+2022-02-28 09:01:14 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-02-28 09:01:14 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-02-28 09:01:14 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 0 ms. Found 0 Redis repository interfaces.
+2022-02-28 09:01:14 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9989 (http)
+2022-02-28 09:01:14 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-02-28 09:01:14 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-02-28 09:01:14 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/pony] - Initializing Spring embedded WebApplicationContext
+2022-02-28 09:01:14 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 253 ms
+2022-02-28 09:01:14 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-02-28 09:01:14 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9989 (http) with context path '/pony'
+2022-02-28 09:01:14 [restartedMain] INFO  top.lcywings.pony.PonyApplication - Started PonyApplication in 0.539 seconds (JVM running for 127.471)
+2022-02-28 09:01:14 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2022-02-28 09:01:16 [restartedMain] INFO  top.lcywings.pony.PonyApplication - Starting PonyApplication using Java 1.8.0_251 on DESKTOP-MG71CNU with PID 6152 (G:\Lcywings\YuyiProject\Lcywings\target\classes started by kcidea-2020 in G:\Lcywings\YuyiProject\Lcywings)
+2022-02-28 09:01:16 [restartedMain] INFO  top.lcywings.pony.PonyApplication - The following profiles are active: dev
+2022-02-28 09:01:16 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-02-28 09:01:16 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-02-28 09:01:16 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+2022-02-28 09:01:16 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9989 (http)
+2022-02-28 09:01:16 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-02-28 09:01:16 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-02-28 09:01:16 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/pony] - Initializing Spring embedded WebApplicationContext
+2022-02-28 09:01:16 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 242 ms
+2022-02-28 09:01:17 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-02-28 09:01:17 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9989 (http) with context path '/pony'
+2022-02-28 09:01:17 [restartedMain] INFO  top.lcywings.pony.PonyApplication - Started PonyApplication in 0.5 seconds (JVM running for 129.982)
+2022-02-28 09:01:17 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2022-02-28 14:30:46 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2022-02-28 14:30:46 [restartedMain] INFO  top.lcywings.pony.PonyApplication - Starting PonyApplication using Java 1.8.0_251 on DESKTOP-MG71CNU with PID 17040 (G:\Lcywings\YuyiProject\Lcywings\target\classes started by kcidea-2020 in G:\Lcywings\YuyiProject\Lcywings)
+2022-02-28 14:30:46 [restartedMain] INFO  top.lcywings.pony.PonyApplication - The following profiles are active: dev
+2022-02-28 14:30:46 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-28 14:30:46 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-28 14:30:46 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-02-28 14:30:46 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-02-28 14:30:46 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2022-02-28 14:30:47 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9989 (http)
+2022-02-28 14:30:47 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9989"]
+2022-02-28 14:30:47 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-02-28 14:30:47 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-02-28 14:30:47 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/pony] - Initializing Spring embedded WebApplicationContext
+2022-02-28 14:30:47 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1166 ms
+2022-02-28 14:30:48 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9989"]
+2022-02-28 14:30:48 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9989 (http) with context path '/pony'
+2022-02-28 14:30:48 [restartedMain] INFO  top.lcywings.pony.PonyApplication - Started PonyApplication in 2.609 seconds (JVM running for 3.265)
+2022-02-28 14:33:27 [http-nio-9989-exec-1] INFO  o.a.c.c.C.[.[localhost].[/pony] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-28 14:33:27 [http-nio-9989-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-02-28 14:33:27 [http-nio-9989-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-02-28 14:33:27 [http-nio-9989-exec-1] INFO  t.l.p.c.common.BaseController - 访问接口: /pony/type/findTypeList，访问IP: 0:0:0:0:0:0:0:1，访问参数: name:[],pageNum:[],pageSize:[]
+2022-02-28 14:33:27 [http-nio-9989-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-02-28 14:33:27 [http-nio-9989-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-02-28 15:09:34 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2022-02-28 15:09:34 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2022-02-28 15:09:38 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2022-02-28 15:09:38 [restartedMain] INFO  top.lcywings.pony.PonyApplication - Starting PonyApplication using Java 1.8.0_251 on DESKTOP-MG71CNU with PID 16492 (G:\Lcywings\YuyiProject\Lcywings\target\classes started by kcidea-2020 in G:\Lcywings\YuyiProject\Lcywings)
+2022-02-28 15:09:38 [restartedMain] INFO  top.lcywings.pony.PonyApplication - The following profiles are active: dev
+2022-02-28 15:09:38 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-28 15:09:38 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-28 15:09:39 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-02-28 15:09:39 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-02-28 15:09:39 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2022-02-28 15:09:39 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9989 (http)
+2022-02-28 15:09:39 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9989"]
+2022-02-28 15:09:39 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-02-28 15:09:39 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-02-28 15:09:39 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/pony] - Initializing Spring embedded WebApplicationContext
+2022-02-28 15:09:39 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1120 ms
+2022-02-28 15:09:40 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9989"]
+2022-02-28 15:09:40 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9989 (http) with context path '/pony'
+2022-02-28 15:09:40 [restartedMain] INFO  top.lcywings.pony.PonyApplication - Started PonyApplication in 2.561 seconds (JVM running for 3.166)
+2022-02-28 15:11:39 [http-nio-9989-exec-1] INFO  o.a.c.c.C.[.[localhost].[/pony] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-28 15:11:39 [http-nio-9989-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-02-28 15:11:39 [http-nio-9989-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-02-28 15:11:39 [http-nio-9989-exec-1] INFO  t.l.p.c.common.BaseController - 访问接口: /pony/type/addType，访问IP: 0:0:0:0:0:0:0:1，访问参数: name:[早饭]
+2022-02-28 15:11:39 [http-nio-9989-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-02-28 15:11:39 [http-nio-9989-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-02-28 15:11:43 [http-nio-9989-exec-3] INFO  t.l.p.c.common.BaseController - 访问接口: /pony/type/findTypeList，访问IP: 0:0:0:0:0:0:0:1，访问参数: name:[],pageNum:[],pageSize:[]
+2022-02-28 15:12:46 [http-nio-9989-exec-6] INFO  t.l.p.c.common.BaseController - 访问接口: /pony/type//updateType，访问IP: 0:0:0:0:0:0:0:1，访问参数: id:[1498194169496469506],name:[早饭]
+2022-02-28 15:13:53 [http-nio-9989-exec-9] INFO  t.l.p.c.common.BaseController - 访问接口: /pony/type/deleteType，访问IP: 0:0:0:0:0:0:0:1，访问参数: id:[1498194169496469506]
+2022-02-28 15:13:56 [http-nio-9989-exec-10] INFO  t.l.p.c.common.BaseController - 访问接口: /pony/type/findTypeList，访问IP: 0:0:0:0:0:0:0:1，访问参数: name:[],pageNum:[],pageSize:[]
+2022-02-28 15:24:45 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2022-02-28 15:24:45 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

@@ -1,9 +1,12 @@
 package top.lcywings.pony;
 
 import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jackson.Jackson2ObjectMapperBuilderCustomizer;
+import org.springframework.boot.web.servlet.ServletComponentScan;
+import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.Bean;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
@@ -12,10 +15,10 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  * @version 1.0
  * @date 2021/11/10
  **/
-//@MapperScan("top.lcywings.pony.dao")
-//@EnableCaching
+@MapperScan("top.lcywings.pony.dao")
+@EnableCaching
 @SpringBootApplication
-//@ServletComponentScan
+@ServletComponentScan
 @EnableTransactionManagement
 //@EnableScheduling
 public class PonyApplication {

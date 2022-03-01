@@ -1,21 +1,21 @@
 my-config:
   port: 9989
-#  temp-path: key/pony/
+  #  temp-path: key/pony/
   key-dir: key/pony/
-#  web-url: http://192.168.1.182:8083/#/dataProvider?apiKey=
-#  file-url: http://192.168.1.188:9000/minio/erms/
+  #  web-url: http://192.168.1.182:8083/#/dataProvider?apiKey=
+  #  file-url: http://192.168.1.188:9000/minio/erms/
   log-path:
     info: log/pony/%d{yyyy-MM}/info.%d{yyyy-MM-dd}.log
     error: log/pony/%d{yyyy-MM}/error.%d{yyyy-MM-dd}.log
-#  minio:
-#    endpoint: http://192.168.1.188:9000
-#    access-key: minioadmin
-#    secret-key: minioadmin
-#    base-bucket: erms
+  #  minio:
+  #    endpoint: http://192.168.1.188:9000
+  #    access-key: minioadmin
+  #    secret-key: minioadmin
+  #    base-bucket: erms
   datasource:
     master:
       username: root
-      password: kcidea1509@
+      password: root
       url: jdbc:mysql://192.168.1.188/ponydb?characterEncoding=UTF-8&useUnicode=true&rewriteBatchedStatements=true&useSSL=false&serverTimezone=Asia/Shanghai
 
 
@@ -56,13 +56,13 @@ spring:
             required: true
           ssl: true
 
-#  #redis
-#  redis:
-#    database: 1
-#    host: 192.168.1.188
-#    password: kcidea1509@
-#    port: 6379
-#    timeout: 60000
+  #  #redis
+  #  redis:
+  #    database: 1
+  #    host: 192.168.1.188
+  #    password: kcidea1509@
+  #    port: 6379
+  #    timeout: 60000
 
   # 数据源
   datasource:
